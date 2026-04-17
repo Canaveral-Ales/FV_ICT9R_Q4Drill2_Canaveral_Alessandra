@@ -7,6 +7,51 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
+
+    <h1>Heat Index Checker</h1>
+    <details note>
+        <summary>Input the temperature and humidity, then click check to see the heat index and its statue.</summary>
+    </details>
+
+ <h4>Degree in Celsius</h4>
+    <input type="number" placeholder="Input degree value"></input>
+
+    <h4>Humidity in percentage</h4>
+    <input type="number" placeholder="Input percentage value"></input>
+
+    <br><br>
+    <button class="btn btn-info" onclick="heatIndex()">Check
+
+</button>
+
+<script>
+    function heatIndex(){
+        var index = "1st";
+    var message = "";
+
+        switch(index){
+        case (index > "1st"):
+            message = "champions!";
+            break;
+
+            case (index === "2nd"):
+            message = "second place!";
+            break;
+
+            case (index === "3rd"):
+            message = "third place!";
+            break;
+
+            case (index === "4th"):
+            message = "fourth place!";
+            break;
+
+            default:
+            message = "rank could not be determined.";
+        }
+        alert(message);
+    }
+</script>
     
 </body>
 </html>
