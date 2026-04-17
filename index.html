@@ -9,7 +9,7 @@
 <body>
 
     <h1>Heat Index Checker</h1>
-    <details note>
+    <details>
         <summary>Input the temperature and humidity, then click check to see the heat index and its statue.</summary>
     </details>
 
@@ -26,24 +26,24 @@
 
 <script>
     function heatIndex(){
-        var index = "1st";
+        var index = "24";
     var message = "";
 
         switch(index){
-        case (index > "1st"):
-            message = "champions!";
+        case (index < "30"):
+            message = "Warm";
             break;
 
-            case (index === "2nd"):
-            message = "second place!";
+            case (index === 25"):
+            message = "Comfortable";
             break;
 
-            case (index === "3rd"):
-            message = "third place!";
+            case (index < "36"):
+            message = "Hot";
             break;
 
-            case (index === "4th"):
-            message = "fourth place!";
+            case (index === "43"):
+            message = "Extreme Heat / Danger";
             break;
 
             default:
